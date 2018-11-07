@@ -15,6 +15,11 @@
 		0FA36A952110635D00B8DE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36A942110635D00B8DE96 /* main.m */; };
 		0FA36A9F2110635D00B8DE96 /* CoreTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36A9E2110635D00B8DE96 /* CoreTextTests.m */; };
 		0FA36AAA2110635D00B8DE96 /* CoreTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36AA92110635D00B8DE96 /* CoreTextUITests.m */; };
+		0FA36ABE2111863D00B8DE96 /* UIView+VLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36ABD2111863D00B8DE96 /* UIView+VLAdditions.m */; };
+		0FA36AC321118A0D00B8DE96 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36AC221118A0D00B8DE96 /* CTDisplayView.m */; };
+		0FA36AC621118A2A00B8DE96 /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36AC521118A2A00B8DE96 /* CTFrameParserConfig.m */; };
+		0FA36AC921118DA400B8DE96 /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36AC821118DA400B8DE96 /* CTFrameParser.m */; };
+		0FA36ACC21118DC600B8DE96 /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36ACB21118DC600B8DE96 /* CoreTextData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		0FA36AA52110635D00B8DE96 /* CoreTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA36AA92110635D00B8DE96 /* CoreTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextUITests.m; sourceTree = "<group>"; };
 		0FA36AAB2110635D00B8DE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA36ABC2111863D00B8DE96 /* UIView+VLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VLAdditions.h"; sourceTree = "<group>"; };
+		0FA36ABD2111863D00B8DE96 /* UIView+VLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VLAdditions.m"; sourceTree = "<group>"; };
+		0FA36ABF211187AF00B8DE96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0FA36AC121118A0D00B8DE96 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		0FA36AC221118A0D00B8DE96 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		0FA36AC421118A2A00B8DE96 /* CTFrameParserConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTFrameParserConfig.h; sourceTree = "<group>"; };
+		0FA36AC521118A2A00B8DE96 /* CTFrameParserConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
+		0FA36AC721118DA400B8DE96 /* CTFrameParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTFrameParser.h; sourceTree = "<group>"; };
+		0FA36AC821118DA400B8DE96 /* CTFrameParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
+		0FA36ACA21118DC600B8DE96 /* CoreTextData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
+		0FA36ACB21118DC600B8DE96 /* CoreTextData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +119,17 @@
 			children = (
 				0FA36A852110635C00B8DE96 /* AppDelegate.h */,
 				0FA36A862110635C00B8DE96 /* AppDelegate.m */,
+				0FA36AC0211189FD00B8DE96 /* core */,
 				0FA36A882110635C00B8DE96 /* ViewController.h */,
 				0FA36A892110635C00B8DE96 /* ViewController.m */,
+				0FA36ABC2111863D00B8DE96 /* UIView+VLAdditions.h */,
+				0FA36ABD2111863D00B8DE96 /* UIView+VLAdditions.m */,
 				0FA36A8B2110635C00B8DE96 /* Main.storyboard */,
 				0FA36A8E2110635D00B8DE96 /* Assets.xcassets */,
 				0FA36A902110635D00B8DE96 /* LaunchScreen.storyboard */,
 				0FA36A932110635D00B8DE96 /* Info.plist */,
 				0FA36A942110635D00B8DE96 /* main.m */,
+				0FA36ABF211187AF00B8DE96 /* PrefixHeader.pch */,
 			);
 			path = CoreText;
 			sourceTree = "<group>";
@@ -130,6 +150,21 @@
 				0FA36AAB2110635D00B8DE96 /* Info.plist */,
 			);
 			path = CoreTextUITests;
+			sourceTree = "<group>";
+		};
+		0FA36AC0211189FD00B8DE96 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				0FA36AC121118A0D00B8DE96 /* CTDisplayView.h */,
+				0FA36AC221118A0D00B8DE96 /* CTDisplayView.m */,
+				0FA36AC421118A2A00B8DE96 /* CTFrameParserConfig.h */,
+				0FA36AC521118A2A00B8DE96 /* CTFrameParserConfig.m */,
+				0FA36AC721118DA400B8DE96 /* CTFrameParser.h */,
+				0FA36AC821118DA400B8DE96 /* CTFrameParser.m */,
+				0FA36ACA21118DC600B8DE96 /* CoreTextData.h */,
+				0FA36ACB21118DC600B8DE96 /* CoreTextData.m */,
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA36ABE2111863D00B8DE96 /* UIView+VLAdditions.m in Sources */,
+				0FA36ACC21118DC600B8DE96 /* CoreTextData.m in Sources */,
+				0FA36AC321118A0D00B8DE96 /* CTDisplayView.m in Sources */,
 				0FA36A8A2110635C00B8DE96 /* ViewController.m in Sources */,
 				0FA36A952110635D00B8DE96 /* main.m in Sources */,
 				0FA36A872110635C00B8DE96 /* AppDelegate.m in Sources */,
+				0FA36AC921118DA400B8DE96 /* CTFrameParser.m in Sources */,
+				0FA36AC621118A2A00B8DE96 /* CTFrameParserConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = CoreText/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = CoreText/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

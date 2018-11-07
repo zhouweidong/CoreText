@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CTFrameParserConfig.h"
+#import "CoreTextData.h"
+#import "CTFrameParser.h"
 
 @interface ViewController ()
 
@@ -16,7 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CTFrameParserConfig *config = [[CTFrameParserConfig alloc] init];
+    config.textColor = [UIColor redColor];
+    config.width = self.ctView.width;
+    
+    CoreTextData *data = [CTFrameParser parseContent:@"按照以上原则，我们将‘CTDispalyView’中的内容拆分" config:config];
+    self.ctView.data = data;
+    self.ctView.height = data.height;
+    self.ctView.backgroundColor = [UIColor yellowColor];
 }
 
 

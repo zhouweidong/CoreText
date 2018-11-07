@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTDisplayView.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet CTDisplayView *ctView;
 
 
 @end
